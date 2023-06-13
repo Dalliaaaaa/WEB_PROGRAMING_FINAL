@@ -6,8 +6,10 @@ close_time = setTimeout("close_window()", 10000); // 1/1000 초 지정 바로 �
 show_time(); //실시간으로 시간 보여주기
 
 function show_time(){
-	let divClock = document.getElementById('Time');
-	divClock.innerText = close_time; //10초 삽입 시작
+	let Time = document.getElementById('Time');
+	var str = "남은 시간은 " + close_time2.toString() + "초 입니다";
+	Time.innerText = str;
+	//Time.innerText = close_time2; //10초 삽입 시작
 	close_time2--; //1초씩 감소
 	setTimeout(show_time, 1000); //1초마다 갱신
 }

@@ -2,6 +2,7 @@ document.getElementById("search_btn").addEventListener('click', search_message);
 
 var search_array = [];
 
+
 function search_message(){
    
     /*alert("검색을 수행합니다!");
@@ -20,6 +21,9 @@ function search_message(){
 		search_array.push(search_str.value); //배열에 검색어 추가
 		let text = document.getElementById("search_message").innerHTML = search_array.toString();
 		document.querySelector("#form_main").submit(); */
+		if (search_array.length == 10){
+			search_array.shift();
+		}
     }
 }
 
@@ -35,14 +39,13 @@ function no_str(){
 			n = "1";
 			break;
 		} else{
-			n = "굳";
+			n = "0";
 		}
 	}
-	if (n === "굳"){
+	if (n === "0"){
 		alert("검색을 수행합니다!");
 		search_array.push(search_str.value); //배열에 검색어 추가
 		let text = document.getElementById("search_message").innerHTML = search_array.toString();
 		document.querySelector("#form_main").submit();
 	}
-	
 }
