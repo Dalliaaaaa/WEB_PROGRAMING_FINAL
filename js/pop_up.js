@@ -29,7 +29,6 @@ function show_clock(){
 	setTimeout(show_clock, 1000); // 1초마다 갱신
 }
 
-/*
 function setCookie(name, value, expiredays) {
    var date = new Date();
    date.setDate(date.getDate() + expiredays); //expitrdays는 기본적으로 24시간 설정
@@ -54,12 +53,13 @@ function getCookie(name){
 
 function closePopup() {
    if (document.getElementById('check_popup').value) {
-      seCookie("popupYN", "N", 1);
+      setCookie("popupYN", "N", 1);
       console.log("쿠키를 설정합니다.");
       self.close();
    }
 }
-*/
+
+/*
 function addJavascript(jsname){
    var th = document.getElementsByTagName("head")[0];
    var s = document.createElement('script');
@@ -71,3 +71,4 @@ function addJavascript(jsname){
 addJavascript('/js/security.js');
 addJavascript('/js/cookie.js');
 addJavascript('/js/session.js');
+*/
