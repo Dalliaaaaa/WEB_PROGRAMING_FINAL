@@ -1,39 +1,51 @@
-#login.html
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Bootstrap demo</title>
-      <!--<script type = "text/javascript" src = "/js/pop_up.js" defer></script>-->
-      <script type = "text/javascript" src = "/js/login.js" defer></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    </head>
-    <body class="text-center" onload="init();">
-      <a href="index.html" target="_blank"><img src="../img/google.png" class="img-fluid" alt="꾸글이미지"></a> <!--구글이미지넣기-->
-      <br><br><br>
-      <main class="form-signin">
-         <form id="form_main">
-            <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
-            <div class="form-floating">
-               <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-               <label for="floatingInput">이메일 주소 입력</label>
-            </div>
-            <div class="form-floating">
-               <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-               <label for="floatingPassword">패스워드 입력</label>
-            </div>
-            
-            <div class="checkbox mb-3">
-               <label>
-                  <input type="checkbox" value="remember-me" id="idSaveCheck">아이디 기억
-               </label>
-            </div>
-            <button class="w-100 btn btn-lg btn-primary" onclick="login();" type="button">로그인하기</button>
-            <p class="mt-5 mb-3 text-muted">&copy; 2017-2021</p>
-         </form>
-      </main>
-   </body>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap demo</title>
+	<!--<script type = "text/javascript" src = "/js/pop_up.js" defer></script>-->
+	<script type = "text/javascript" src = "js/login.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+<!--<body class="text-center" onload="init();">-->
+<body class="text-center">
+	<br><br><br>
+	<a href="index.html" target="_blank"><img src="img/google.png" class="img-fluid" alt="꾸글이미지"></a> <!--구글이미지넣기-->
+	<br><br>
+	<main class="form-signin">
+		<form id="form_main">
+			<h1 class="h3 mb-3 fw-normal">로그인을 해주세요!</h1>
+			<div class="form-floating">
+			   <input type="email" class="form-control" id="floatingInput" name="id" placeholder="name@example.com">
+			   <label for="floatingInput">이메일 주소 입력</label>
+			</div>
+			<div class="form-floating">
+			   <input type="password" class="form-control" id="floatingPassword" name="pass" placeholder="Password">
+			   <label for="floatingPassword">패스워드 입력</label>
+			</div>
+
+			<div class="checkbox mb-3">
+			   <label>
+				  <input type="checkbox" value="remember-me" id="idSaveCheck">아이디 기억
+			   </label>
+			</div>
+			<button class="w-100 btn btn-lg btn-primary" onclick="login();" type="button">로그인하기</button>
+			<br><br>
+			<!--<p class="mt-5 mb-3 text-muted">&copy; 2017-2021</p>-->
+		</form>
+	</main>
+	<footer class="bg-light text-center text-lg-start">
+		<div class="text-center p-3" style="background-color:#D8D8D8;">
+			<h3 class="text-secondary">FOOTER TEST</h3>
+			© 2020 Copyright: <a class="text-dark" href="https://꾸글.com/">꾸글.com</a>
+			<i class="bi bi-facebook" style="color: #3b5998; fontsize: 2rem"></i>
+			<i class="bi bi-twitter" style="color: #55acee; fontsize: 2rem"></i>
+			<i class="bi bi-instagram" style="color: #ac2bac; fontsize: 2rem"></i>
+		</div>
+	</footer>
+</body>
 </html>

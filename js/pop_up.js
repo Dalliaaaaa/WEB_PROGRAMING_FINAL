@@ -1,9 +1,9 @@
 function pop_up() {
-   /* var cookieCheck = getCookie("popupYN");
-   if(cookieCheck != "N"){
-      window.open("pop_up.html", "팝업테스트", "width=400, height=300, top=10, left=10");
-   } */
-	window.open("../pop_up.html", "팝업테스트", "width=400, height=300, top=10, left=10");
+	var cookieCheck = getCookie("popupYN");
+	if(cookieCheck != "N"){
+	  window.open("pop_up.html", "팝업테스트", "width=400, height=300, top=10, left=10");
+	}
+	//window.open("../pop_up.html", "팝업테스트", "width=400, height=300, top=10, left=10");
 }
 
 function show_clock(){
@@ -59,7 +59,7 @@ function closePopup() {
       self.close();
    }
 }
-
+*/
 function addJavascript(jsname){
    var th = document.getElementsByTagName("head")[0];
    var s = document.createElement('script');
@@ -71,4 +71,3 @@ function addJavascript(jsname){
 addJavascript('/js/security.js');
 addJavascript('/js/cookie.js');
 addJavascript('/js/session.js');
-*/

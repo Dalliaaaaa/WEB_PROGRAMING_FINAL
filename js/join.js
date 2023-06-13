@@ -1,4 +1,3 @@
-join.js
 class SignUp {
    constructor(firstName, lastName, birthdayDate, gender, emailAddress, phoneNumber, classNumber, random){
       this.firstName = firstName;
