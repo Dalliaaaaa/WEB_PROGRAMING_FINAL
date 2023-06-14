@@ -20,7 +20,7 @@ function login(){
         alert("아이디와 비밀번호를 모두 입력해주세요.")
     }else{
       	session_set();
-        //login_check();
+        login_check();
       
       // 10초 후에 자동 로그아웃
    
@@ -202,7 +202,7 @@ function session_set() {
    }
 }
 
-/*
+
 function session_get(){ //세션 읽기
    if (sessionStorage){
       return sessionStorage.getItem("Session_Storage_encrypted");
@@ -211,7 +211,7 @@ function session_get(){ //세션 읽기
       alert("세션 스토리지 지원 x");
    }
 }
-*/
+
 
 function session_check() {
    if (sessionStorage.getItem("Session_Storage_encypted")){
