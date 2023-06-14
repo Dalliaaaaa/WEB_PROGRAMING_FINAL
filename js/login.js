@@ -85,7 +85,7 @@ function login_check() {
 	
 	
 	if (id !== id_result || pass !== pass_result){
-		alert("제대로된 패스워드와 아이디를 입력해주세요.")
+		alert("제대로 된 패스워드와 아이디를 입력해주세요.")
 	}
 	
 	else{
