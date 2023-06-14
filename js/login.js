@@ -37,19 +37,7 @@ function logout(){
    session_del(); //세션 삭제
    location.href='../index.html';
 }
-/*
-function addJavascript(jsname){
-   var th = document.getElementsByTagName("head")[0];
-   var s = document.createElement('script');
-   s.setAttribute('type', 'text/jvascript');
-   s.setAttribute('src', jsname);
-   th.appendChild(s);
-}
 
-addJavascript('security.js'); // 암복호화 함수
-addJavascript('session.js'); // 세션 함수
-addJavascript('cookie.js'); // 쿠키 함수
-*/
 function init(){
    let id = document.querySelector("#floatingInput");
    let check = document.querySelector("#idSaveCheck");
@@ -245,7 +233,6 @@ function session_del(){
 }
 
 //암호화 복호화
-
 function encodeByAES256(key, data){
    const cipher = CryptoJS.AES.encrypt(data, CryptoJS.enc.Utf8.parse(key), {
       iv: CryptoJS.enc.Utf8.parse(""),
@@ -281,3 +268,17 @@ function decrypt_text(password){
    const b = this.decodeByAES256(rk, eb);
    console.log(b);
 }
+
+/*
+function addJavascript(jsname){
+   var th = document.getElementsByTagName("head")[0];
+   var s = document.createElement('script');
+   s.setAttribute('type', 'text/jvascript');
+   s.setAttribute('src', jsname);
+   th.appendChild(s);
+}
+
+addJavascript('security.js'); // 암복호화 함수
+addJavascript('session.js'); // 세션 함수
+addJavascript('cookie.js'); // 쿠키 함수
+*/
