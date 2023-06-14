@@ -2,7 +2,7 @@ function login(){
     let form = document.querySelector("#form_main");
     let id = document.querySelector("#floatingInput");
     let password = document.querySelector("#floatingPassword");
-   let check = document.querySelector("#idSaveCheck");
+    let check = document.querySelector("#idSaveCheck");
     
     form.action = "../index_login.html";
     form.method = "get"
@@ -30,12 +30,9 @@ function login(){
 		  logout();
 		  location.href = '/index.html'; // 메인 페이지로 이동
 		}, 10000);
-
   	}
-	
- 	
-	
 }
+
 function logout(){
    session_del(); //세션 삭제
    location.href='../index.html';
@@ -63,11 +60,6 @@ function init(){
       check.checked = true;
    }
    session_check(); //세션 유무 검사
-}
-
-function logout(){
-   session_del(); //세션 삭제
-   location.href='../index.html';
 }
 
 function get_id(){
